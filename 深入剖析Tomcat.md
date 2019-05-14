@@ -77,3 +77,134 @@
 2. invoke()方法，invoke()方法会创建一个类载入器，载入相关ｓｅｒｖｌｅｔ类，并调用该servlet类的service()方法
 3. 
 
+## Chapter5
+5.1 Container接口
+
+1. 共有四种类型的容器，对应不同的概念层次
+   1. Engine：表示整个Catalina servlet引擎
+   2. Host: 表示包含有一个或多个Context容器的虚拟主机
+   3. Context：表示一个Web应用程序，一个Context可以有多个Wrapper
+   4. Wrapper：表示一个独立的servlet
+2. 可以调用Container接口的addChild（）方法向某容器添加子容器
+3. findChild和findChildren方法的来查找某个子容器和所有子容器的某个集合
+
+5.2 管道任务
+
+1. 管道包含该servlet容器将要调用的任务。一个阀表示一个具体的执行任务。在servlet容器中，有一个基础阀
+2. 当调用容器的invoke（）方法后，容器会将处理工作交由管道完成，而管道会调用其中的第一个阀开始处理
+3. 通过引入ValueContext接口来实现阀的便利执行
+4. 当连接器调用容器的invoke（）方法后，容器会调用关掉的invoke（）方法
+5. ValueContext接口通过invokeNext（）方法来调用下一个阀
+6. 管道会调用ValueContext实例的invokeContext（）方法，ValueContext实例会将自身传给每个阀，因此，每个阀都可以调用ValueContext的invokeNext（）方法
+7. Value接口的invoke()方法实现如下：
+   1.     public void invoke(Request request, Response response, ValueContext valueContext){
+              
+          }
+   2. 
+
+5.2.1 Pipeline 接口
+
+1. servlet容器通过调用Pipeline的invoke（）方法开始调用管道中的阀和基础阀。通过调用addValue（）方法来添加新的阀
+
+5.2.2 Value 接口
+
+1. 阀是Value接口的实例，用来处理接收到的请求。该接口由两个办法，invoke()方法和getInfo（）方法
+
+    public void invoke(Request request, Response response, ValueContext valueContext){
+    }
+
+5.2.3 ValueContext 接口
+
+该接口由两个方法，invokeNext（）和getInfo()f方法
+
+5.2.4 Conatined 接口
+
+该接口的实现类可以通过接口中的一个方法至多与一个servlet容器相关联
+
+5.3 Wrapper接口
+
+1. Wrapper接口的实现类要负责管理其基础servlet类的servlet生命周期。
+2. 比较重要的方法是load（）和allocate（）方法。allocate（）方法会分配一个已经初始化的servlet实例
+
+5.4 Context接口
+
+Context接口中比较重要的方法是addWrapper方法和createWrapper方法
+
+5.5 Wrapper 应用程序
+
+1. 在servlet容器中载入相关servlet类的工作由Loader接口的实例完成
+
+SimpleLoader类
+
+1. SimpleLoader类的构造函数会初始化类加载器，供SimpleWrapper实例使用
+
+SimplePipeline类
+
+1. 实现了Pipeline接口，该类中最重要的方法是invoke（）方法，该方法包含了一个内部类SimplePipelineValueContext，该类实现了ValueContext接口
+
+SimpleWrapper类
+
+1. allocate（）
+2. load（）
+3. getLoader（）
+4. 实例变量Loader、Container parent、Pipeline
+
+SimpleWrapperValue类
+
+1. 是一个基础阀，专门用于处理SimpleWrapper的请求，实现了Value接口和Contained接口
+2. invoke（）方法
+3. 不需要调用传递给它的ValueContext实例的invokeNext方法
+4. invoke（）方法会调用SimpleWrapper的allocate（）方法来获取该Wrapper表示的servlet实例，然后调用该servlet实例的service方法
+
+ClientIPLoggerValue类
+
+1. 表示的阀用来将客户端的IP地址输出到控制台
+2. invoke()
+
+HeaderLoggerValue类
+
+1. 把请求头信息输出到控制台
+2. invoke（）
+
+Bootstrap1类
+
+1. main（）
+
+5.6 Context应用程序
+
+1. 本章应用程序展示了如何使用一个包含了两个Wrapper实例的Context实例来构建Web应用程序。
+2. 当应用程序中有多个Wrapper实例时，需要使用一个映射器，帮助servlet容器选择一个子容器来处理某个指定的请求
+3. Mapper接口
+   1. map（）方法，返回要处理某个特定请求的子容器的实例
+4. SimpleContext类使用SimpleContextMapper类的实例作为其映射器
+5. SimpleContext类的invoke（）:
+   1.     public void invoke(Request request, Response response){
+              pipeline.invoke(request,response);
+          }
+
+1. SimplePipelinel类的invoke（）
+
+1.     public void invoke(Request request, Response response){
+           (new SimplePipelineValueContext()).invokeNext(request,response);
+       }
+
+5.6.1 SimpleContextValue类
+
+1. 是SimpleContextValue的基础阀，最重要的是invoke方法
+2. 调用context的map（）得到Wrapper类，然后调用wrapper的invoke方法
+
+5.6.2 SimpleContextMapper类
+
+1. map()方法，map方法会从request对象中解析处请求的上下文路径，并调用context实例的findServletMapping（）方法来获取一个与该路径相关联的名称，如果找到了这个名称，则它调用Context实例的findChild（）方法来获取一个Wrapper实例
+
+5.6.3 SimpleContext类
+
+1. addServletMapping（）添加一个URL模式/Wrapper实例的名称对
+2. findServletMapping（）通过URL模式查找对应的Wrapper实例名称
+3. addMapper（）阿紫容器中添加一个映射器
+4. findMapper()找到正确的映射器，在SimpleContext中，他会返回默认映射器
+5. map() 返回负责处理当前请求的Wrapper实例
+
+5.6.4 Bootstrap2类
+
+1. main()
