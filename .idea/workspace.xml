@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4f04eda-b1a7-4ce3-bd16-ed2643641f8f" name="Default Changelist" comment="" />
+    <list default="true" id="a4f04eda-b1a7-4ce3-bd16-ed2643641f8f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/Chapter1/target/" />
     <ignored path="$PROJECT_DIR$/Chapter2/target/" />
     <ignored path="$PROJECT_DIR$/Chapter3/target/" />
@@ -13,35 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/Chapter4/SimpleContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/Chapter4/Bootstrap.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/resource/PrimitiveServlet.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/resource/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +44,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="y" value="42" />
     <option name="width" value="960" />
@@ -84,8 +58,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,143 +65,18 @@
               <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter3" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Chpater4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557671122737" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557797225254" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Chapter2/src" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -269,30 +116,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557669839003</updated>
-      <workItem from="1557669840371" duration="1261000" />
+      <workItem from="1557669840371" duration="1414000" />
+      <workItem from="1557796830876" duration="292000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1261000" />
+    <option name="totallyTimeSpent" value="1706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="1920" height="1038" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.253212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3295964" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -300,15 +141,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3295964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,40 +174,16 @@
     <entry file="file://$PROJECT_DIR$/Chapter4/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/Constants.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/StaticResourceProcessor.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/HttpServer2.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/ResponseFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/Request.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/resource/PrimitiveServlet.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/ServletProcessor2.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/ServletProcessor1.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/Response.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/RequestFacade.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/Constants.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/StaticResourceProcessor.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/HttpServer2.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/ResponseFacade.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/Request.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/resource/PrimitiveServlet.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/ServletProcessor2.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/ServletProcessor1.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/Response.java" />
+    <entry file="file://$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/RequestFacade.java" />
     <entry file="file://$PROJECT_DIR$/Chapter1/Chapter1.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -440,15 +263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/Chapter4/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/resource/PrimitiveServlet.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/resource/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter3/src/main/java/Chapter3/http/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -458,13 +272,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/Chapter4/SimpleContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        <state relative-caret-position="396">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/Chapter4/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/resource/PrimitiveServlet.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter4/src/main/java/resource/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
