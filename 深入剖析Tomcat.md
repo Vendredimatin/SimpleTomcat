@@ -78,7 +78,7 @@
 3. 
 
 ## Chapter5
-5.1 Container接口
+### 5.1 Container接口
 
 1. 共有四种类型的容器，对应不同的概念层次
    1. Engine：表示整个Catalina servlet引擎
@@ -88,7 +88,7 @@
 2. 可以调用Container接口的addChild（）方法向某容器添加子容器
 3. findChild和findChildren方法的来查找某个子容器和所有子容器的某个集合
 
-5.2 管道任务
+### 5.2 管道任务
 
 1. 管道包含该servlet容器将要调用的任务。一个阀表示一个具体的执行任务。在servlet容器中，有一个基础阀
 2. 当调用容器的invoke（）方法后，容器会将处理工作交由管道完成，而管道会调用其中的第一个阀开始处理
@@ -98,39 +98,39 @@
 6. 管道会调用ValueContext实例的invokeContext（）方法，ValueContext实例会将自身传给每个阀，因此，每个阀都可以调用ValueContext的invokeNext（）方法
 7. Value接口的invoke()方法实现如下：
    1.     public void invoke(Request request, Response response, ValueContext valueContext){
-              
+          ​    
           }
    2. 
 
-5.2.1 Pipeline 接口
+#### 5.2.1 Pipeline 接口
 
 1. servlet容器通过调用Pipeline的invoke（）方法开始调用管道中的阀和基础阀。通过调用addValue（）方法来添加新的阀
 
-5.2.2 Value 接口
+#### 5.2.2 Value 接口
 
 1. 阀是Value接口的实例，用来处理接收到的请求。该接口由两个办法，invoke()方法和getInfo（）方法
 
     public void invoke(Request request, Response response, ValueContext valueContext){
     }
 
-5.2.3 ValueContext 接口
+#### 5.2.3 ValueContext 接口
 
 该接口由两个方法，invokeNext（）和getInfo()f方法
 
-5.2.4 Conatined 接口
+#### 5.2.4 Conatined 接口
 
 该接口的实现类可以通过接口中的一个方法至多与一个servlet容器相关联
 
-5.3 Wrapper接口
+### 5.3 Wrapper接口
 
 1. Wrapper接口的实现类要负责管理其基础servlet类的servlet生命周期。
 2. 比较重要的方法是load（）和allocate（）方法。allocate（）方法会分配一个已经初始化的servlet实例
 
-5.4 Context接口
+### 5.4 Context接口
 
 Context接口中比较重要的方法是addWrapper方法和createWrapper方法
 
-5.5 Wrapper 应用程序
+### 5.5 Wrapper 应用程序
 
 1. 在servlet容器中载入相关servlet类的工作由Loader接口的实例完成
 
@@ -170,7 +170,7 @@ Bootstrap1类
 
 1. main（）
 
-5.6 Context应用程序
+### 5.6 Context应用程序
 
 1. 本章应用程序展示了如何使用一个包含了两个Wrapper实例的Context实例来构建Web应用程序。
 2. 当应用程序中有多个Wrapper实例时，需要使用一个映射器，帮助servlet容器选择一个子容器来处理某个指定的请求
@@ -179,25 +179,25 @@ Bootstrap1类
 4. SimpleContext类使用SimpleContextMapper类的实例作为其映射器
 5. SimpleContext类的invoke（）:
    1.     public void invoke(Request request, Response response){
-              pipeline.invoke(request,response);
+          ​    pipeline.invoke(request,response);
           }
 
 1. SimplePipelinel类的invoke（）
 
 1.     public void invoke(Request request, Response response){
-           (new SimplePipelineValueContext()).invokeNext(request,response);
+       ​    (new SimplePipelineValueContext()).invokeNext(request,response);
        }
 
-5.6.1 SimpleContextValue类
+#### 5.6.1 SimpleContextValue类
 
 1. 是SimpleContextValue的基础阀，最重要的是invoke方法
 2. 调用context的map（）得到Wrapper类，然后调用wrapper的invoke方法
 
-5.6.2 SimpleContextMapper类
+ ####　5.6.2 SimpleContextMapper类
 
 1. map()方法，map方法会从request对象中解析处请求的上下文路径，并调用context实例的findServletMapping（）方法来获取一个与该路径相关联的名称，如果找到了这个名称，则它调用Context实例的findChild（）方法来获取一个Wrapper实例
 
-5.6.3 SimpleContext类
+#### 5.6.3 SimpleContext类
 
 1. addServletMapping（）添加一个URL模式/Wrapper实例的名称对
 2. findServletMapping（）通过URL模式查找对应的Wrapper实例名称
@@ -205,6 +205,49 @@ Bootstrap1类
 4. findMapper()找到正确的映射器，在SimpleContext中，他会返回默认映射器
 5. map() 返回负责处理当前请求的Wrapper实例
 
-5.6.4 Bootstrap2类
+#### 5.6.4 Bootstrap2类
 
 1. main()
+
+## Chapter 6 生命周期
+
+1. 通过实现Lifecycle接口，可以达到统一启动／关闭这些组件的效果
+2. 实现了Lifecycle接口的组件可以触发一个或多个下面的事件，需要编写相应的事件监听器对这些事件进行响应
+
+### 6.1 Lifecycle接口
+
+1. Catalina在设计上允许一个组件包含其他组建．父组件负责启动／关闭它的子组件，Catalina的启动类只需要启动一个组件就可以将全部应用的组件都启动起来．这种单一启动／关闭机制是通过Lifecycle接口实现的
+2. 组件必须提供start()和stop()方法的实现，供其父组件调用
+3. 组件中可以注册多个事件监听器来对发生在该组件上的某些事件进行监听．当某个事件发生时，相应的事件监听器会收到通知
+
+### 6.2 LifecycleEvent类
+
+生命周期事件是LifecycleEvent类的实例
+
+### 6.3 LifecycleListener接口
+
+生命周期事件监听器是LifecycleListener接口的实例
+
+当事件监听器监听到相关事件发生时，会调用该方法lifecycleEvent()
+
+### 6.4 LifecycleSupport类
+
+1. LifecycleSupport帮助组件管理监听器，并触发相应的生命周期事件
+2. 将所有的生命周期监听器存储在一个名为listeners的数组中，并初始化为一个没有元素的数组对象
+3. fireLifecycleEvent()方法会触发一个生命周期时间．首先，它会复制复制监听器数组，然后它会调用数组中每个成员的lifecycleEvent（）方法，并传入要触发的事件
+
+### 6.5 应用程序
+
+#### 6.5.1 SimpleContext类
+
+1. 单一启动／关闭机制，只需要启动最高层级的组件，其余的组件会由各自的父组件去启动．关闭这些组件，也只需要关闭最高层级的组建即可
+
+#### 6.5.2 SimpleContextLifecycleListener类
+
+#### 6.5.３ SimpleLoader类
+
+#### 6.5.4 SimplePipeline类
+
+#### 6.5.5 SimpleWrapper类
+
+1. SimpleWrapper类的start()方法与SimpleContext类的ｓｔａｒｔ（）方法类似，它会启动添加到其中的所有组件，并触发相应的事件
