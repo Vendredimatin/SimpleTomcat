@@ -251,3 +251,33 @@ Bootstrap1类
 #### 6.5.5 SimpleWrapper类
 
 1. SimpleWrapper类的start()方法与SimpleContext类的ｓｔａｒｔ（）方法类似，它会启动添加到其中的所有组件，并触发相应的事件
+
+## Chapter 7 日志记录器
+
+### 7.1 Logger接口
+
+1. Logger接口的最后两个log（）方法接收一个日志级别参数。如果参数的日志级别的数字比日志记录器实例中设定的等级低，才会记录该条消息
+
+### 7.2 Tomcat的日志记录器
+
+#### 7.2.1 LoggerBase类
+
+1. LoggerBase类是一个抽象类，它实现了Logger接口中除log（String msg）方法外的全部方法的实现
+
+#### 7.2.2 SystemOutLogger 类
+
+1. 接收到的每条日志信息都会传递给System.out.println()
+
+#### SystemErrLogger 类
+
+1. 将日志信息输出到标准错误，调用System.err.println()
+
+#### 7.2.4 FileLogger类
+
+1. 会将从servlet容器中接收到的日志消息写到一个文件中，并且可以选择是否要为每条信息添加时间戳
+2. open（）
+   1. 会在指定目录创建一个新的日志文件。创建一个PrintWriter实例
+3. close（）
+   1. 负责确保将PrintWriter实例中所有的日志消息都写到文件中
+4. log（）
+   1. 对时间戳进行处理，会比较tsDate与字符串形式的变量date比较，若二者的值不相等，则log（）方法会关闭当前的日志文件，将tsDate的值赋给date，并打开一个新的日志文件
