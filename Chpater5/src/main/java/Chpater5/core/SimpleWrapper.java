@@ -266,7 +266,8 @@ public class SimpleWrapper implements Wrapper, Pipeline {
 
     @Override
     public void setName(String s) {
-        this.name = name;
+        assert s!=null:"传入的ｎａｍｅ为ｎｕｌｌ";
+        this.name = s;
     }
 
     @Override
