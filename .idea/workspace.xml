@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4f04eda-b1a7-4ce3-bd16-ed2643641f8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter7/Chapter7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimpleContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimpleContextLifecycleListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimpleContextMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimpleContextValve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimpleLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimplePipeline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimpleWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimpleWrapperValve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/startup/Bootstrap1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/resource/ModernServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/resource/PrimitiveServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/main/java/resource/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/src/test/java/Chapter7/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/深入剖析Tomcat.md" beforeDir="false" afterPath="$PROJECT_DIR$/深入剖析Tomcat.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Chapter1/target/" />
     <ignored path="$PROJECT_DIR$/Chapter2/target/" />
@@ -31,6 +15,7 @@
     <ignored path="$PROJECT_DIR$/Chpater5/target/" />
     <ignored path="$PROJECT_DIR$/Chpater6/target/" />
     <ignored path="$PROJECT_DIR$/Chapter7/target/" />
+    <ignored path="$PROJECT_DIR$/Chpater8/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +23,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/startup/Bootstrap1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="64" column="86" selection-start-line="64" selection-start-column="86" selection-end-line="64" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/loader/WebappClassLoader.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <folding>
+                <element signature="e#3530#3531#0" expanded="true" />
+                <element signature="e#3567#3568#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleContextConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,6 +93,7 @@
       <find>name</find>
       <find>addS</find>
       <find>map</find>
+      <find>Reloader</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -66,14 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter2/pom.xml" />
-        <option value="$PROJECT_DIR$/Chapter3/pom.xml" />
-        <option value="$PROJECT_DIR$/Chapter4/pom.xml" />
-        <option value="$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/ResponseFacade.java" />
-        <option value="$PROJECT_DIR$/Chapter1/Chapter1.iml" />
-        <option value="$PROJECT_DIR$/Chapter1/src/main/java/Chapter1/Response.java" />
-        <option value="$PROJECT_DIR$/Chapter1/src/main/java/Chapter1/HttpServer.java" />
-        <option value="$PROJECT_DIR$/Chapter2/src/main/java/Chapter2/HttpServer1.java" />
         <option value="$PROJECT_DIR$/Chapter4/src/main/java/Chapter4/SimpleContainer.java" />
         <option value="$PROJECT_DIR$/Chpater5/pom.xml" />
         <option value="$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/core/SimpleWrapperValue.java" />
@@ -117,6 +145,14 @@
         <option value="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/core/SimpleContextMapper.java" />
         <option value="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7/startup/Bootstrap1.java" />
         <option value="$PROJECT_DIR$/Chapter7/src/main/java/resource/PrimitiveServlet.java" />
+        <option value="$PROJECT_DIR$/Chpater8/pom.xml" />
+        <option value="$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimplePipeline.java" />
+        <option value="$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleWrapper.java" />
+        <option value="$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleWrapperValve.java" />
+        <option value="$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleContextConfig.java" />
+        <option value="$PROJECT_DIR$/Chpater8/src/main/java/resource/PrimitiveServlet.java" />
+        <option value="$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/startup/Bootstrap1.java" />
+        <option value="$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/WebappClassLoader.java" />
       </list>
     </option>
   </component>
@@ -156,25 +192,20 @@
             <path>
               <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chpater6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chpater6" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chpater6" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chpater6" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -182,36 +213,97 @@
             <path>
               <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chpater6" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter6" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter7" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Chpater6" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTomcat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTomcat" type="462c0819:PsiDirectoryNode" />
+              <item name="Chpater8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559565138851" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559639515846" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Chapter2/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/common/lib/naming-resources.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -220,16 +312,16 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/resources" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chpater8/src/main/java/Chpater8" />
+      <recent name="$PROJECT_DIR$/Chpater8/src/main/java" />
       <recent name="$PROJECT_DIR$/Chapter7/src/main/java" />
       <recent name="$PROJECT_DIR$/Chapter7/src/main/java/Chapter7" />
       <recent name="$PROJECT_DIR$/Chpater6/src/main/java/Chapter6/core" />
-      <recent name="$PROJECT_DIR$/Chpater6/src/main/java/Chapter6" />
-      <recent name="$PROJECT_DIR$/Chpater6/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/resources" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -244,7 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Bootstrap1 (2)">
+  <component name="RunManager" selected="Application.Bootstrap1 (3)">
     <configuration name="Bootstrap1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Chapter6.startup.Bootstrap1" />
       <module name="Chpater6" />
@@ -264,6 +356,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Chapter7.startup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bootstrap1 (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chpater8.startup.Bootstrap1" />
+      <module name="Chpater8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Chpater8.startup.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -299,6 +404,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bootstrap1 (3)" />
         <item itemvalue="Application.Bootstrap1 (2)" />
         <item itemvalue="Application.Bootstrap1 (1)" />
         <item itemvalue="Application.Bootstrap2" />
@@ -324,7 +430,9 @@
       <workItem from="1558057947586" duration="1611000" />
       <workItem from="1558317748756" duration="2010000" />
       <workItem from="1558319793535" duration="4188000" />
-      <workItem from="1559560738394" duration="1354000" />
+      <workItem from="1559560738394" duration="1394000" />
+      <workItem from="1559636700459" duration="307000" />
+      <workItem from="1559637656274" duration="1772000" />
     </task>
     <task id="LOCAL-00001" summary="add Chpater5">
       <created>1557797247951</created>
@@ -361,16 +469,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558323962957</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit Chpater7 and chapter 8 md">
+      <created>1559565164031</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559565164031</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17831000" />
+    <option name="totallyTimeSpent" value="19950000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="42" width="1920" height="1038" extended-state="6" />
+    <frame x="0" y="42" width="1920" height="1038" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2767666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28426126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -379,7 +495,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38340807" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38340807" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40919283" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -389,7 +505,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3206278" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.31390134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -410,7 +526,8 @@
     <MESSAGE value="commit Chpater6 md" />
     <MESSAGE value="commit Chpater5 part2" />
     <MESSAGE value="commit Chpater6" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit Chpater6" />
+    <MESSAGE value="commit Chpater7 and chapter 8 md" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit Chpater7 and chapter 8 md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -449,187 +566,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter2/src/Chapter2/ServletProcessor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13926">
-          <caret line="784" column="29" selection-start-line="784" selection-start-column="29" selection-end-line="784" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/connector/http/HttpConnector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="317" column="31" selection-start-line="317" selection-start-column="26" selection-end-line="317" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/core/SimpleLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/core/SimplePipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/core/SimpleWrapperValve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/SessionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/startup/Bootstrap1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/connector/http/HttpProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="596" column="86" selection-start-line="596" selection-start-column="20" selection-end-line="596" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/ModernServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/resource/PrimitiveServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/resource/ModernServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/Context.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="133" column="9" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/connector/RequestFacade.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#1979#1980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/connector/HttpRequestBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="e#3132#3133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/Container.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/core/SimpleWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5104">
-          <caret line="268" column="38" selection-start-line="268" selection-start-column="38" selection-end-line="268" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3285#3286#0" expanded="true" />
-            <element signature="e#3312#3313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/core/SimpleContextValve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="53" column="59" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/Chpater5/core/SimpleContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="130" column="43" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#5967#5968#0" expanded="true" />
-            <element signature="e#5995#5996#0" expanded="true" />
-            <element signature="e#11232#11233#0" expanded="true" />
-            <element signature="e#11268#11269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chpater6/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chpater5/src/main/java/resource/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -768,17 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter7/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/深入剖析Tomcat.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter7/src/main/java/resource/ModernServlet.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -871,6 +796,162 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/深入剖析Tomcat.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/resource/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter7/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleContext.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleContextLifecycleListener.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleContextValve.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleContextMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimplePipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleWrapperValve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/SimpleContextConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/resource/ModernServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/resource/PrimitiveServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/loader/WebappLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/jdk-11.0.1/lib/src.zip!/java.naming/javax/naming/directory/DirContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/common/lib/naming-resources.jar!/org/apache/naming/resources/ProxyDirContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/Loader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#792#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/startup/Bootstrap1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="64" column="86" selection-start-line="64" selection-start-column="86" selection-end-line="64" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chpater8/src/main/java/Chpater8/core/WebappClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9088">
+          <caret line="538" column="8" selection-start-line="538" selection-start-column="8" selection-end-line="538" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3530#3531#0" expanded="true" />
+            <element signature="e#3567#3568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../study/多读书/tomcat/jakarta-tomcat-4.1.12/server/lib/catalina.jar!/org/apache/catalina/loader/WebappClassLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="e#3530#3531#0" expanded="true" />
+            <element signature="e#3567#3568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -924,7 +1005,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Chapter7</last-edited>
+          <last-edited>Chpater8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
