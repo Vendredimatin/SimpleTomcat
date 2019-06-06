@@ -14,6 +14,7 @@
         <module name="Chpater5" />
         <module name="Chpater6" />
         <module name="Chpater8" />
+        <module name="Chpater9" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="Chpater5" target="1.7" />
       <module name="Chpater6" target="1.7" />
       <module name="Chpater8" target="1.7" />
+      <module name="Chpater9" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
