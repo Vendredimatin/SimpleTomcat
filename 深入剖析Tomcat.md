@@ -462,9 +462,37 @@ java.lang.ClassLoader类会维护一个Vector对象，保存已经载入的类�
 5. HttpRequestBase类的doGetSession()会调用context接口的getManager()方法来获取Session管理器对象，然后就可以获取到Session对象
 6. doGetSession() P125
 
-#### 
+## 第10章 安全性
 
-#### 
+servlet容器是通过一个名为验证器的阀来支持安全限制的。在调用Wrapper阀之前，会先调用验证器阀，对当前用户进行身份验证。如果用户输入了正确的用户名和密码，则验证阀会调用后续的阀
+
+### 过程
+
+Bootstrap中通过context.setRealm() 来设置领域对象，领域对象中包括了用户的信息和角色
+
+然后simpleContextConfig类中会通过lifecycle事件，调用authenticatorConfig()方法，authenticatorConfig()方法会检查当前StardardContext对象的管道中的基础阀或附加阀是否是验证其。因为一个Context实例只能有一个验证器。如果没有验证器，则会默认添加一个BasicAuthenticator阀，每次有http请求时，会调用BasicAuthenticator.authenticate()方法，然后会在之中调用realm.authenticate() 返回Principal() 对象，Principal中有hasRole()方法来检查用户是否有权限访问
+
+```java
+public boolean HasRole(String role){
+    if(role == null)
+        return false;
+    return (Arrays.binarySearch(roles, role) >= 0);
+}
+```
+
+Tomcat中对用户角色权限认证的方法也值得借鉴
+
+```java
+class User{
+	String username;
+     String password;
+    ArrayList roles = new ArrayList();
+    public void addRole(String role){}
+    public ArrayListt getRoles(){}
+}
+```
+
+
 
 #### 
 
