@@ -1,0 +1,2 @@
+1. 在SimpleWrapperValve 中添加了两行，使得request关联上context，其父类抽象类HttpRequestBase就可以通过context得到ｓｅｓｓｉｏｎ管理器
+２．BootStrap 修改过
