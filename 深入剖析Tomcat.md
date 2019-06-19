@@ -494,27 +494,160 @@ class User{
 
 
 
-#### 
+## Chapter 11 StandardWrapper
 
-#### 
 
-#### 
 
-#### 
+### 11. 1 方法调用序列
 
-#### 
+具体过程：
 
-#### 
+1. 连接器创建request和response对象
+2. 连接器调用StandardContext实例得invoke()方法
+3. StandardContext实例得invoke()方法调用其管道对象的invoke()方法。StandardContext中管道对象得基础阀是StandardContextValve类得实例，因此，StandardContext的管道对象会调用StandardContextValve实例的invoke()方法
+4. StandardContextValve实例的invoke()方法获取相应的Wrapper实例处理HTTP请求，调用Wrapper实例的invoke（）方法
+5. StandardWrapper类是Wrapper接口的标准实现，StandardWrapper实例的invoke()方法会调用其管道对象的invoke()方法
+6. StandardWrapper的管道对象中的基础阀是StandardWrapperValve类的实例，因此，会调用StandardWrapperValve的invoke()方法，StandardWrapperValve的invoke()方法会调用Wrapper实例的allocate()方法获取servlet实例
+7. allocate()方法调用load()方法载入相应的servlet类，若已经载入，不需要重复载入
+8. load()方法调用servlet的init()方法
+9. StandardWrapperValve调用servlet的service()方法
 
-#### 
+### 11.2 SingThreadModel
 
-#### 
+1. 实现此接口的目的是保证servlet实例一次只处理一个请求。
+2. servlet容器维护一个servlet实例池，然后将每个新请求分派给一个空闲的servlet实例。该接口并不能防止servlet访问共享资源造成的同步问题，例如访问类的静态变量
+3. 实现了SingleThreadModel接口的servlet类只能保证再同一时刻，只有一个线程在执行该servlet实例的service（）方法
+4. ps：实现了该接口的servlet类并不是多线程安全的
 
-#### 
+### 11.3 StandardWrapper
 
-#### 
+1. StandardWrapper的主要任务是载入它所代表的servlet类，并进行实例化，调用servlet的service()方法由StandardWrapperValve对象完成
+2. 对于没有实现SingThreadModel接口的servlet类，StandardWrapper只会载入该servlet类一次，并对随后的请求都返回该servlet类的同一个实例
+3. 为了获得更好的性能，会维护一个STM servlet实例池
 
-#### 
+#### 11.3.1 分配servlet 实例
+
+1. allocate()方法分为两个部分，为了处理STM servlet和非STM servlet
+
+2. ```java
+   if(!singleThreadModel){
+       if(instance == null){
+           synchronized(this){
+               if(instance == null){
+                   try{
+                       instance = loadServlet();
+                   }catch(){
+                       
+                   }
+               }
+           }
+           
+           if(!singleThreadModel){
+               if(debug >= 2){
+                   countAllocated++;
+                   return instance;
+               }
+           }
+       }
+   }
+   ```
+
+3. 若servlet类是一个STM servlet类，则allocate()会试图从对象池中返回一个servlet实例。变量instancePool是一个Stack类型的实例，保存了所有的STM servlet实例
+
+4.  ```java
+   synchronized(instancePool){
+       while（countAllocated >= nInstances）{
+           if(nInstances < maxInstances){
+               try{
+                   instancePool.push(loadServlet());
+                   nInstances++;
+               }
+           }else{
+               try{
+                   instancePool.wait();
+               }
+           }
+       }
+       if(debug >= 2){
+           log
+       }
+       countAllocated++;
+       return (Servlet) instancePool.pop();
+   }
+    ```
+
+5. 如果变量nInstances的值大于等于变量maxInstance的值，他会通过调用instancePool栈的wait()方法进入等待状态，直到某个STM servlet实例被放回到栈中
+
+#### 11.3.2 载入servlet类
+
+1. loadServlet()
+
+2. 在实例化servelt类后，loadServlet()方法出发BEFORE_INIT_EVET事件，即调用servlet（）实例的init（）方法
+
+3. ```java
+   instanceSupport.fireInstanceEvent(Instance.BEFORE_INIT_EVENT,servlet);
+   servlet.init(facade);
+   instanceSupport.fireInstanceEvent(Instance.AFTER_INIT_EVENT,servlet);
+   ```
+
+4. 如果servlet类是一个STM servlet，则要将该servlet实例添加到servlet实例池中
+
+#### 11.3.3 ServletConfig对象
+
+1. StandardWrapper对象如何获取servletConfig对象？
+2. 答案在StandardWrapper类本身，该类不仅是先了Wrapper接口，还实现了ServletConfig接口
+3. 使用一个map来存储初始化参数的值
+
+#### 11.3.4 servlet容器的父子关系
+
+#### 11.4 StandardWrapperFacade类
+
+1. 当在StandardWrapper类使用下面的代码创建StandardWrapperFacade类的一个实例，需要将自身实例作为参数传入StandardWrapperFacade的构造函数
+
+2. ```java
+   private StandardWrapperFacade facade = new StandardWrapperFacade(this);
+   public StandardWrapperFacade(StandardWrapper config){
+       super();
+       this.config = (ServletConfig) config;
+   }
+   ```
+
+
+### StandardWrapperValve类
+
+1. 是StandardWrapper的基础阀，要完成的两个操作
+
+   1. 执行与该servlet实例相关联的全部过滤器
+
+   2. 调用servlet实例的service方法
+
+       
+
+2. StandardWrapperValve的invoke()方法实现中会执行一下几个操作
+   1. 调用StandardWrapper实例的allocate（）方法获取其表示的servlet实例
+   2. 调用私有方法createFilterChain()，创建过滤器链
+   3. 调用过滤器链的doFilter()方法，其中包括调用servlet实例的service()方法
+   4. 释放过滤器链
+   5. 调用Wrapper实例的deallocate()方法
+   6. 如果该servlet类再也不会被使用到，调用unload()方法
+
+### 11.8 ApplicationFilterChain类
+
+1. StandardWrapperValve类的invoke()方法会创建ApplicationFilterChain类的一个实例，并调用其doFilter()方法
+
+2. doFilter()方法会调用过滤器链中第一个过滤器的doFilter()方法。
+
+3. doFilter(ServletRequest,ServletResponse,FilterChain chain);
+
+4. ```java
+   doFilter(ServletRequest,ServletResponse,FilterChain chain){
+       chain.doFilter(request,response);
+   }
+   ```
+
+5.  如果某个过滤器是过滤器链中的最后一个过滤器，则会调用被请求的servlet类的service()方法
+
+6. 
 
 #### 
 
