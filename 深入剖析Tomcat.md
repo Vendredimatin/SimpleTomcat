@@ -494,7 +494,7 @@ class User{
 
 
 
-## Chapter 11 StandardWrapper
+##     Chapter 11 StandardWrapper
 
 
 
@@ -555,7 +555,7 @@ class User{
 3. 若servlet类是一个STM servlet类，则allocate()会试图从对象池中返回一个servlet实例。变量instancePool是一个Stack类型的实例，保存了所有的STM servlet实例
 
 4.  ```java
-   synchronized(instancePool){
+      synchronized(instancePool){
        while（countAllocated >= nInstances）{
            if(nInstances < maxInstances){
                try{
@@ -573,7 +573,7 @@ class User{
        }
        countAllocated++;
        return (Servlet) instancePool.pop();
-   }
+      }
     ```
 
 5. 如果变量nInstances的值大于等于变量maxInstance的值，他会通过调用instancePool栈的wait()方法进入等待状态，直到某个STM servlet实例被放回到栈中
@@ -649,19 +649,58 @@ class User{
 
 6. 
 
-#### 
+##     第12章 StandardContext类
 
-#### 
+### 12.1 StandardContext的配置
 
-#### 
+#### 12.1.1 StandardContext类的构造函数
 
-#### 
+构造函数中最重要的事情是为StandardContext实例的管道对象设置基础阀。该基础阀会处理从连接器中接收到的每个HTTP请求
 
-#### 
+```java
+public StandardContext(){
+    super();
+    pipeline.setBasic(new StandardContextValve());
+    namingResources.setContainer(this);
+}
+```
 
-#### 
+#### 12.1.2 启动StandardContext实例
 
-#### 
+start()方法需要完成以下工作
+
+1. 触发BEFORE_START事件；
+2. 将availability属性设置为false
+3. 将configured属性设置为false
+4. 配置资源
+5. 设置载入器
+6. 设置session管理器
+7. 初始化字符集映射器
+8. 启动与该Context容器相关联的组件
+9. 启动子容器
+10. 启动管道对象
+11. 启动Session管理器
+12. 触发START事件
+13. 检查configured属性的值
+14. 触发AFTER_START事件
+
+#### 12.1.3 invoke()方法
+
+StandardContext类的invoke方法由与其相关联的连接器调用，或者当StandardContext实例是Host容器的一个子容器时，由Host实例的invoke()方法调用
+
+### 12.2 StandardContextMapper类
+
+invoke()方法第一件事是获取一个要处理HTTP请求Wrapper实例。
+
+使用映射器找到一个合适的Wrapper实例。
+
+获得Wrapper实例后，它会调用Wrapper实例的invoke()方法
+
+### 12.3 对重载的支持
+
+当web.xml 文件发生变化时或WEB-INF/classes目录下的其中一个文件被重新编译后，应用程序会重载
+
+使用另一个线程检查WEB-INF目录中的所有类和JAR文件的时间戳，只需要调用其setContainer()方法将WebappLoader对象与StandardContext对象相关联就可以启动该检查线程 
 
 #### 
 
